@@ -54,7 +54,7 @@ public class TrainSystemTest {
 	@Test
     public void testGetController() {
         system.getController();
-        assertNotNull(controller);
+        Assert.assertNotNull(controller);
     }
 
 	
