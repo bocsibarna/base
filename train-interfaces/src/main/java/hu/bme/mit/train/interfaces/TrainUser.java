@@ -8,6 +8,6 @@ public interface TrainUser {
 
 	void overrideJoystickPosition(int joystickPosition);
 
-	void veszfek(TrainController kontroller);
+	/*void veszfek(TrainController kontroller);*/
 
 }

@@ -30,10 +30,10 @@ public class TrainUserImpl implements TrainUser {
 	}
 
 
-	public void veszfek(TrainController kontroller){
+	/*public void veszfek(TrainController kontroller){
 		overrideJoysticPkosition(0);
 		kontroller.setSpeedLimit(getJoystickPosition());
 		
-	}
+	}*/
 
 }
