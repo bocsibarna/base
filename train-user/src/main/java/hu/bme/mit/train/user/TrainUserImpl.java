@@ -29,4 +29,12 @@ public class TrainUserImpl implements TrainUser {
 		System.out.println("Hello World!");
 	}
 
+
+	public void veszfek(TrainController kontroller){
+	
+		overrideJoystickPosition(0);
+		kontroller.setSpeedLimit(getJoystickPosition());
+
+	}
+
 }
