@@ -55,10 +55,8 @@ public class TrainSystemTest {
         TrainSystem trainSystem = new TrainSystem();
         TrainController controller = trainSystem.getController();
         assertNotNull(controller);
-        // Add more specific assertions related to TrainController behavior
+        
     }
-
-	
 
 	
 }
