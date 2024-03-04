@@ -14,10 +14,11 @@ public class TrainSystemTest {
 	TrainController controller;
 	TrainSensor sensor;
 	TrainUser user;
+	TrainSystem system;
 	
 	@Before
 	public void before() {
-		TrainSystem system = new TrainSystem();
+		system = new TrainSystem();
 		controller = system.getController();
 		sensor = system.getSensor();
 		user = system.getUser();
@@ -52,10 +53,8 @@ public class TrainSystemTest {
 
 	@Test
     public void testGetController() {
-        TrainSystem trainSystem = new TrainSystem();
-        TrainController controller = trainSystem.getController();
+        system.getController();
         assertNotNull(controller);
-        
     }
 
 	
