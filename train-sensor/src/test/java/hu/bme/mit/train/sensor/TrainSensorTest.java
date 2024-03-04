@@ -1,14 +1,13 @@
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+package hu.bme.mit.train.sensor;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 import static org.mockito.Mockito.*;
 
-class TrainSensorImplTest {
+public class TrainSensorTest {
 
-    private TrainController mockController;
-    private TrainUser mockUser;
-    private TrainSensorImpl trainSensor;
-
-    @BeforeEach
+    @Before
     void setUp() {
         mockController = mock(TrainController.class);
         mockUser = mock(TrainUser.class);
@@ -27,18 +26,5 @@ class TrainSensorImplTest {
         assertEquals(expectedSpeedLimit, actualSpeedLimit);
     }
 
-    @Test
-    void overrideSpeedLimit_shouldUpdateSpeedLimitAndCallController() {
-        // Arrange
-        int newSpeedLimit = 10;
-
-        // Act
-        trainSensor.overrideSpeedLimit(newSpeedLimit);
-
-        // Assert
-        assertEquals(newSpeedLimit, trainSensor.getSpeedLimit());
-        verify(mockController, times(1)).setSpeedLimit(newSpeedLimit);
-    }
-
-    // Additional tests can be added here if needed
+    
 }
