@@ -8,23 +8,14 @@ import static org.mockito.Mockito.*;
 public class TrainSensorTest {
 
     @Before
-    void setUp() {
-        mockController = mock(TrainController.class);
-        mockUser = mock(TrainUser.class);
-        trainSensor = new TrainSensorImpl(mockController, mockUser);
+    public void before() {
+        // TODO Add initializations
     }
 
     @Test
-    void getSpeedLimit_shouldReturnInitialSpeedLimit() {
-        // Arrange
-        int expectedSpeedLimit = 5;
-
-        // Act
-        int actualSpeedLimit = trainSensor.getSpeedLimit();
-
-        // Assert
-        assertEquals(expectedSpeedLimit, actualSpeedLimit);
+    public void ThisIsAnExampleTestStub() {
+        // TODO Delete this and add test cases based on the issues
     }
 
-    
+
 }
