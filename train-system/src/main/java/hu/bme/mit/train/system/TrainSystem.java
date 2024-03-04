@@ -21,7 +21,8 @@ public class TrainSystem {
 		return sensor;
 	}
 
-	public TrainUser getUser() {
+	public TrainUser ge
+	tUser() {
 		return user;
 	}
 
