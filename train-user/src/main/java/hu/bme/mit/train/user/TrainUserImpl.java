@@ -28,4 +28,12 @@ public class TrainUserImpl implements TrainUser {
 		controller.setJoystickPosition(joystickPosition);
 	}
 
+
+	public void veszfek(TrainController kontroller){
+	
+		overrideJoystickPosition(0);
+		kontroller.setSpeedLimit(getJoystickPosition());
+
+	}
+
 }
