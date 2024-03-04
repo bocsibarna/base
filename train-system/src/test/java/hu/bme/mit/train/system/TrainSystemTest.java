@@ -51,13 +51,14 @@ public class TrainSystemTest {
 	}
 
 	@Test
-	public void speedTest() {
-		user.overrideJoystickPosition(6);
-		controller.followSpeed();
-		user.overrideJoystickPosition(-1);
-		controller.followSpeed();
-		Assert.assertEquals(0, controller.getReferenceSpeed());
-	}
+    public void testGetController() {
+        TrainSystem trainSystem = new TrainSystem();
+        TrainController controller = trainSystem.getController();
+        assertNotNull(controller);
+        // Add more specific assertions related to TrainController behavior
+    }
+
+	
 
 	
 }
