@@ -31,7 +31,6 @@ public class TrainUserImpl implements TrainUser {
 
 
 	public void veszfek(TrainController kontroller){
-	dsdasfasfas
 		overrideJoysticPkosition(0);
 		kontroller.setSpeedLimit(getJoystickPosition());
 
